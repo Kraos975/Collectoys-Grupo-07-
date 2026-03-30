@@ -35,7 +35,7 @@ header {
     display: flex;
     list-style: none;
     gap: 30px;
-    font-size: 25px;
+    font-size: 22px;
 }
 .navlinks a {
     text-decoration: none;
@@ -103,6 +103,7 @@ header {
 }
  /* FIN DE BARRA DE NAVEGACION */
 
+<<<<<<< Updated upstream
  /* INICIO DE TABLA DE PRODUCTOS */
 .tabla-1-punko {
     border: 5px solid white;     /* Borde de la tabla */
@@ -143,3 +144,65 @@ header {
     transform: scale(1.05); /* efecto de “agrandar” */
 }
 /* FIN DE TABLA DE PRODUCTOS */
+=======
+a {
+    text-decoration: none;
+    color: inherit; /* mantiene el color normal */
+}
+
+/* INICIO SECCION OFERTAS */
+.section-videos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 100%;
+    
+}
+.contenedor-video {
+    position: relative;
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.contenedor-video video {
+    width: 100%;
+    display: block;
+    height: auto;
+    object-fit: cover;
+}
+.info-card {
+    position: absolute;
+    display: grid;
+    place-items: center;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    
+}
+.contenedor-video:hover .info-card {
+    opacity: 1;
+}
+.btn-carrito {
+    padding: 12px 24px;
+    border-radius: 30px;
+    color: white;
+    background: #B91C1C;
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+    transform: translateY(10px);
+    transition: transform 0.3 ease, background-color 0.2s;
+    cursor: pointer;
+}
+.btn-carrito:hover {
+    color: red;
+    background: white;
+    font-weight: bold;
+    
+}
+/* FIN DE SECCION DE OFERTAS */
+iframe{
+    width: 100%;
+}
+>>>>>>> Stashed changes
