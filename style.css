@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+* {
+    max-width: 100%; /*para que no tenga la barra de abajo */
+}
+
 body { 
     background-image:url(./imgs/FondoWeb.png);
     background-position: center;
@@ -119,7 +123,7 @@ header {
 
 .contenedor-productos {
     display: flex;
-    flex-wrap: wrap; /* 🔥 hace que bajen */
+    flex-wrap: wrap; /* hace que bajen */
     justify-content: center;
 }
 
@@ -129,7 +133,7 @@ header {
 }
 
 .boton-tabla-funko {
-    background-color: #ff9389; /* color llamativo */
+    background-color: hsl(5, 100%, 77%); /* color llamativo */
     color: white; /* texto blanco */
     font-size: 18px; /* más grande */
     font-weight: bold;
@@ -162,8 +166,10 @@ a {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    max-width: 100%;
-    
+    /* justify-content: center;  para que  los 2 de abajo enten centrados*/
+
+    padding: 20px; /* para que no este apegado*/
+    /*margin: 0 auto;*/
 }
 .contenedor-video {
     position: relative;
