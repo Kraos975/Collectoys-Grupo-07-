@@ -3,16 +3,12 @@
 }
 
 a {
-    text-decoration: none; /* quita subrayado */
-    color: inherit; /* usa el color del padre */
+    text-decoration: none;
+    color: inherit;
 }
-
-img,
-video {
-    max-width: 100%; /* no se salen del contenedor */
-    height: auto; /* mantiene proporción */
+html ,body {
+    scroll-behavior: smooth;
 }
-
 body {
     background-image: url(./imgs/FondoWeb.png); /* fondo */
     background-position: center; /* centra fondo */
@@ -22,7 +18,7 @@ body {
     font-family: sans-serif; /* tipo de letra */
     margin: 0; /* sin margen */
     padding: 0; /* sin relleno */
-    height: 100%; /* altura completa */
+    
     color: white; /* texto blanco */
 }
 
@@ -77,9 +73,7 @@ header {
     transition: all 0.3s ease-in-out; /* animación */
 }
 
-.navlinks a:hover {
-    color: #000; /* texto negro */
-}
+
 
 .navlinks a:hover::after {
     top: 50%; /* mantiene centro */
@@ -113,48 +107,69 @@ header {
     opacity: 1; /* aparece */
     transform: translate(-50%, -50%) scale(1); /* crece */
 }
+ /* FIN DE HEADER  */
 
-/* tabla productos */
-.tabla-1-punko {
-    border: 5px solid white; /* borde */
-    width: 290px; /* ancho fijo */
-    border-radius: 15px; /* esquinas redondas */
-    overflow: hidden; /* oculta exceso */
-    text-align: center; /* centra texto */
-    margin: 10px; /* espacio exterior */
-    background-color: transparent; /* fondo transparente */
-    border-collapse: separate; /* separa bordes */
+/* Inicio banner novedades */
+.seccion-novedades{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.banner-novedades {
+    display: grid;
+    place-items: center;
+    position: relative;
+    background-color: #000;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    min-height: 500px;
+    overflow: hidden;
+    width: 90%;
+}
+.banner-novedades::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(imgs/SeccionNovedades.png);
+    transition: transform 0.6s, filter 0.6s;
+}   
+
+.banner-novedades:hover::before {
+    filter: blur(8px);
+    transform: scale(1.1);
+}
+.contenido-banner h1 {
+    font-weight: 900;
+}
+.contenido-banner {
+    font-weight: bold;
+    font-size: 20px;
+    z-index: 2;
+    
+}
+.btn-novedades {
+    display: inline-block;
+    margin-top: 40px;
+    background-color: white;
+    color: red;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+.btn-novedades:hover {
+    transform: scale(1.2);
+    background-color: red;
+    color: white;
+    
 }
 
-.contenedor-productos {
-    display: flex; /* flexbox */
-    flex-wrap: wrap; /* baja si no entra */
-    justify-content: center; /* centra */
-}
+/* Fin de banner novedades */
 
-.td-tabla-funko {
-    padding: 30px; /* espacio interno */
-    text-align: center; /* centra texto */
-}
-
-.boton-tabla-funko {
-    background-color: hsl(5, 100%, 77%); /* color */
-    color: white; /* texto blanco */
-    font-size: 18px; /* tamaño */
-    font-weight: bold; /* negrita */
-    padding: 12px 25px; /* tamaño botón */
-    border: none; /* sin borde */
-    border-radius: 10px; /* redondeado */
-    cursor: pointer; /* mano */
-    transition: all 0.3s ease; /* animación */
-}
-
-.boton-tabla-funko:hover {
-    background-color: #ff301d; /* cambia color */
-    transform: scale(1.05); /* agranda */
-}
-
-/* ofertas */
+/* ofertas videos */
 .titulo-ofertas {
     display: flex; /* flex */
     justify-content: center; /* centra */
@@ -164,7 +179,7 @@ header {
 
 .section-videos {
     display: grid; /* grid */
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
     gap: 20px; /* espacio */
     padding: 20px; /* relleno */
 }
@@ -197,6 +212,7 @@ header {
     opacity: 1; /* aparece */
 }
 
+
 .btn-carrito {
     text-decoration: none; /* sin subrayado */
     padding: 12px 24px; /* tamaño */
@@ -218,6 +234,136 @@ header {
     transform: scale(1.3); /* agranda */
     transition: all 0.3s; /* animación */
 }
+/* Fin de ofertas */
+.categorias {
+    padding: 40px 20px;
+}
+.contenedor-categorias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    
+}
+.card {
+    width: 250px;
+    overflow: hidden;
+    border-radius: 12px;
+    transition: transform 0.3s;
+}
+.card:hover {
+    transform: translate;
+}
+/* Inicio Seccion categorias */
+.categorias h1 {
+    display: flex;
+    justify-content: center;
+}
+.contenedor-categorias {
+    display: flex;
+    width: 100%;
+    max-width: 900px;
+    height: 500px;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+.item-categorias {
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: all 0.5s;
+
+}
+
+.item-categorias a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.item-categorias img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.item-categorias:hover {
+    flex: 4;
+    filter: blur(0px);
+}
+
+/* Fin de seccion categorias */
+
+
+/*  Inicio  productos */
+.contenedor-productos {
+    display: flex; /* flexbox */
+    flex-wrap: wrap; /* baja si no cabe */
+    justify-content: center; /* centra */
+    gap: 20px; /* espacio entre cards */
+    margin-bottom: 40px; /* margen inferior */
+}
+
+/* card producto */
+.producto-card {
+    background-color: #1c1c1c;
+    width: 250px; /* ancho fijo */
+    border-radius: 15px; /* bordes redondos */
+    overflow: hidden; /* oculta exceso */
+    text-align: center; /* centra texto */
+    transition: all 0.3s ease; /* animación */
+    padding-bottom: 15px; /* espacio interno */
+    margin: 10px; /* margen exterior */
+}
+
+.producto-card:hover {
+    transform: scale(1.05); /* agranda */
+    background-color: #1c1c1c; /* fondo negro */
+    box-shadow: 0px 10px 20px red;
+}
+
+/* imagen producto */
+.producto-img {
+    width: 100%; /* ancho completo */
+    padding: 20px; /* relleno */
+}
+
+/* información producto */
+.producto-info {
+    padding: 10px; /* relleno interno */
+}
+
+.logo-mini {
+    height: 70px;
+    width: 120; /* tamaño logo pequeño */
+}
+
+/* precio */
+.producto-info h2 {
+    color: white; /* color del precio */
+    font-weight:700;
+}
+
+/* botón comprar */
+.btn-comprar {
+    display: inline-block; /* bloque en línea */
+    margin-top: 15px; /* espacio arriba */
+    padding: 12px 20px; /* relleno */
+    background-color: white; /* fondo rojo */
+    color: red; /* texto blanco */
+    border-radius: 10px; /* bordes redondos */
+    font-weight: bold; /* negrita */
+    transition: all 0.3s ease; /* animación */
+}
+
+.btn-comprar:hover {
+    background-color: red; /* cambia fondo */
+    color: white; /* cambia texto */
+    transform: scale(1.15); /* agranda */
+}
+
+/* Fin de productos */
 
 /* mapas */
 iframe {
@@ -287,6 +433,8 @@ iframe {
 .link-registrate:hover {
     color: red; /* cambia color */
 }
+/* fin de login */
+
 
 /* locales y horarios */
 .info-tienda {

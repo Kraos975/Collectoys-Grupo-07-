@@ -7,6 +7,7 @@
 }
 
 .carta-publicacion {
+    background-color: #1c1c1c;
     flex: 1 1 320px; /* flexible, mínimo 320px */
     max-width: 480px; /* ancho máximo */
     border: 3px solid white; /* borde blanco */
@@ -32,72 +33,11 @@
 }
 
 /* contenedor productos */
-.contenedor-productos {
-    display: flex; /* flexbox */
-    flex-wrap: wrap; /* baja si no cabe */
-    justify-content: center; /* centra */
-    gap: 20px; /* espacio entre cards */
-    margin-bottom: 40px; /* margen inferior */
-}
 
-/* card producto */
-.producto-card {
-    width: 250px; /* ancho fijo */
-    border: 3px solid white; /* borde */
-    border-radius: 15px; /* bordes redondos */
-    overflow: hidden; /* oculta exceso */
-    text-align: center; /* centra texto */
-    background: transparent; /* fondo transparente */
-    transition: all 0.3s ease; /* animación */
-    padding-bottom: 15px; /* espacio interno */
-    margin: 10px; /* margen exterior */
-}
-
-.producto-card:hover {
-    transform: scale(1.05); /* agranda */
-    background-color: black; /* fondo negro */
-}
-
-/* imagen producto */
-.producto-img {
-    width: 100%; /* ancho completo */
-    padding: 20px; /* relleno */
-}
-
-/* información producto */
-.producto-info {
-    padding: 10px; /* relleno interno */
-}
-
-.logo-mini {
-    width: 50px; /* tamaño logo pequeño */
-}
-
-/* precio */
-.producto-info h2 {
-    color: #ff9389; /* color del precio */
-}
-
-/* botón comprar */
-.btn-comprar {
-    display: inline-block; /* bloque en línea */
-    margin-top: 15px; /* espacio arriba */
-    padding: 12px 20px; /* relleno */
-    background-color: #fd1500; /* fondo rojo */
-    color: white; /* texto blanco */
-    border-radius: 10px; /* bordes redondos */
-    font-weight: bold; /* negrita */
-    transition: all 0.3s ease; /* animación */
-}
-
-.btn-comprar:hover {
-    background-color: white; /* cambia fondo */
-    color: red; /* cambia texto */
-    transform: scale(1.15); /* agranda */
-}
 
 /* footer general */
 .footer {
+    background-color: #1c1c1c;
     text-align: center; /* centra texto */
     padding: 20px; /* relleno */
     margin-top: 50px; /* espacio arriba */
@@ -148,12 +88,13 @@
 
 /* estilo links */
 .links a {
+    font-weight: bold;
     text-decoration: none; /* sin subrayado */
     color: white; /* texto blanco */
     transition: all 0.3s ease; /* animación */
 }
 
 .links a:hover {
-    color: rgb(211, 76, 76); /* cambia color */
+    color: red;
     transform: scale(1.1); /* agranda */
 }
