@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../imgs/Favicon.png" type="image/png">
     <title>Carrito</title>
-     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../style-pagprincipal2.css">
+    <link rel="stylesheet" href="../css/style-carrito.css">
+
 <body>
 
-<!-- INICIO BARRA DE NAVEGACION -->
+    <!-- INICIO BARRA DE NAVEGACION -->
     <header>
-        
+
         <a href="../index.html"><img src="../imgs/barralogo.png" alt="" id="logo"></a>
         <nav>
             <ul class="navlinks">
-                
-                <li><a href="../Paginas/Registro.html">Registro</a></li>
-                <li><a href="../Paginas/Login.html">Login</a></li>
-                <li><a href="../Paginas/carrito.html">Carrito</a></li>
+
+                <li><a href="../index.html">Inicio</a></li>
                 <li><a href="../Documentos/Catalogo Collectoys.pdf" target="_blank">Catalogo</a></li>
                 <li><a href="../Paginas/Staff.html">Staff</a></li>
                 <li><a href="../Paginas/Musica.html">Temas</a></li>
@@ -25,85 +27,103 @@
 
             </ul>
         </nav>
-            <div class="navright">
-                <a href="../Paginas/carrito.html" class="icononav"><img src="../imgs/Carrito.png" alt="" width=" 40px"></a>
-                <a href="../Paginas/Login.html paginas/login.html" class="icononav"><img src="../imgs/logousuario.png" alt="" width="40px"></a>
-            </div>
+        <div class="navright">
+            <a href="../Paginas/carrito.html" class="icononav"><img src="../imgs/Carrito.png" alt="" width=" 40px"></a>
+            <a href="../Paginas/Login.html" class="icononav"><img src="../imgs/logousuario.png" alt="" width="40px"></a>
+        </div>
     </header>
-<!-- FIN DE BARRA DE NAVEGACION -->
+    <!-- FIN DE BARRA DE NAVEGACION -->
 
 
-    <div align="center">
-          
-    <h2>Carrito de compras</h2>     
-            
-    <table border="5" cellpadding="15">
+    <div class="carrito-container">
 
-    <thead>
-    <tr>
-        <th><h3>Producto</h3></th>
-        <th><h3>Descripcion</h3></th>
-        <th><h3>Cantidad</h3></th>
-        <th><h3>Precio</h3>
-    </tr>
+        <!-- PRODUCTOS -->
+        <div class="carrito-items">
 
-    </thead>
+            <h2>Carrito de compras</h2>
 
-    <tbody>
+            <div class="item">
+                <img src="../imgs/Funko Capitan America.jpg">
+                <div class="info">
+                    <h3>Funko Captain America</h3>
+                    <p>Cantidad: 1</p>
+                </div>
+                <span class="precio">S/ 55.00</span>
+            </div>
 
-    <tr>
-        <td><img src="../imgs/Funko Capitan America.jpg" title ="Capitan America" width="240"></td>
-        <td>Funko Captain America</td>
-        <td>1 und</td>
-        <td><i>55.00</i></td>
-    </tr>
+            <div class="item">
+                <img src="../imgs/Funko Venom.avif">
+                <div class="info">
+                    <h3>Funko Venom Blacklight</h3>
+                    <p>Cantidad: 1</p>
+                </div>
+                <span class="precio">S/ 70.00</span>
+            </div>
 
-    <tr>
-        <td><img src="../imgs/Funko Venom.avif" title ="Venom Blacklight" width="240"></td>
-        <td>Funko Venom Blacklight</td>
-        <td>1 und</td>
-        <td><i>70.00</i></td>
-    </tr>
+            <div class="item">
+                <img src="../imgs/Funko Wolf.jpg">
+                <div class="info">
+                    <h3>Funko Captain Wolf</h3>
+                    <p>Cantidad: 1</p>
+                </div>
+                <span class="precio">S/ 60.00</span>
+            </div>
 
-    <tr>
-        <td><img src="../imgs/Funko Wolf.jpg" title ="Venom Blacklight" width="240"></td>
-        <td>Funko Captain Wolf</td>
-        <td>1 und</td>
-        <td><i>60.00</i></td>
-    </tr>
-    <tr> 
-        <td colspan="3" align="center"><h2>Total a pagar:</h2></td>
-        <td>185.00</td>
-    </tr>
-    </tbody>
+        </div>
 
-    </table>
-    
-    <br>
-        <input type ="submit" value="Comprar">
-    <br>
-    
+        <!-- RESUMEN -->
+        <div class="carrito-resumen">
+
+            <h3>Resumen</h3>
+
+            <div class="resumen-linea">
+                <span>Subtotal</span>
+                <span>S/ 185.00</span>
+            </div>
+
+            <div class="resumen-linea total">
+                <span>Total</span>
+                <span>S/ 185.00</span>
+            </div>
+
+            <button class="btn-comprar-carrito">Finalizar compra</button>
+
+        </div>
+
     </div>
 
-<div align="center">
+    <footer class="footer">
 
-    <footer>
-      
-    <h3>Redes sociales</h3>
+        <div class="footer-redes">
+            <h3>Redes sociales</h3>
 
-    <a href="https://www.facebook.com/profile.php?id=100076234667375" target="_blank"> <img src="../imgs/FB_logo.png" width="50"></a>
-    <a href="https://www.tiktok.com/@collectoys_peru" target="_blank"><img src="../imgs/Tiktok_logo.png" width="50"></a>
-    <a href="https://www.instagram.com/collectoys_peru/" target="_blank"><img src="../imgs/Instagram_logo.png" width="50"></a>
+            <div class="redes">
+                <a href="https://www.facebook.com/profile.php?id=100076234667375" target="_blank" class="icono-red">
+                    <img src="../imgs/FB_logo.png" alt="Facebook">
+                </a>
 
-    <h3 id="atencion">Atencion al Cliente</h3>
+                <a href="https://www.tiktok.com/@collectoys_peru" target="_blank" class="icono-red">
+                    <img src="../imgs/Tiktok_logo.png" alt="TikTok">
+                </a>
 
-    <!--Se elimino el target="_blank"-->
-        <a href="../Paginas/PReembolso.html">Política de reembolso</a>
-        <a href="../Paginas/PEnvio.html">Política de envío</a>
-        <a href="../Paginas/TServicio.html">Términos del servicio</a>
-        <a href="../Paginas/reclamo.html">Libro de reclamaciones</a>
-     
+                <a href="https://www.instagram.com/collectoys_peru/" target="_blank" class="icono-red">
+                    <img src="../imgs/Instagram_logo.png" alt="Instagram">
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-links">
+            <h3>Atención al Cliente</h3>
+
+            <div class="links">
+                <a href="Paginas/PReembolso.html">Política de reembolso</a>
+                <a href="Paginas/PEnvio.html">Política de envío</a>
+                <a href="Paginas/TServicio.html">Términos del servicio</a>
+                <a href="Paginas/reclamo.html">Libro de reclamaciones</a>
+            </div>
+        </div>
+
     </footer>
-</div>
-    </body>
-    </html>
+</body>
+
+</html>

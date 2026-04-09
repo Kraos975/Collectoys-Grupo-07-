@@ -1,111 +1,219 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../imgs/Favicon.png" type="image/png">
-    <title>Staff</title>
-    <link rel="stylesheet" href="../style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../imgs/Favicon.png" type="image/png">
+  <title>Staff</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../style-pagprincipal2.css">
+  <link rel="stylesheet" href="../css/style-staff.css">
 </head>
+
 <body>
 
   <!-- INICIO BARRA DE NAVEGACION -->
-    <header>
-        
-        <a href="../index.html"><img src="../imgs/barralogo.png" alt="" id="logo"></a>
-        <nav>
-            <ul class="navlinks">
-                
-                <li><a href="../Paginas/Registro.html">Registro</a></li>
-                <li><a href="../Paginas/Login.html">Login</a></li>
-                <li><a href="../Paginas/carrito.html">Carrito</a></li>
-                <li><a href="../Documentos/Catalogo Collectoys.pdf" target="_blank">Catalogo</a></li>
-                <li><a href="../Paginas/Staff.html">Staff</a></li>
-                <li><a href="../Paginas/Musica.html">Temas</a></li>
-                <li><a href="../Paginas/rastrear.html">Rastrear pedido</a></li>
+  <header>
 
-            </ul>
-        </nav>
-            <div class="navright">
-                <a href="../Paginas/carrito.html" class="icononav"><img src="../imgs/Carrito.png" alt="" width=" 40px"></a>
-                <a href="../Paginas/Login.html paginas/login.html" class="icononav"><img src="../imgs/logousuario.png" alt="" width="40px"></a>
-            </div>
-    </header>
-    <!-- FIN DE BARRA DE NAVEGACION -->
+    <a href="../index.html"><img src="../imgs/barralogo.png" alt="" id="logo"></a>
+    <nav>
+      <ul class="navlinks">
 
-        <div align="center">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../Documentos/Catalogo Collectoys.pdf" target="_blank">Catalogo</a></li>
+        <li><a href="../Paginas/Staff.html">Staff</a></li>
+        <li><a href="../Paginas/Musica.html">Temas</a></li>
+        <li><a href="../Paginas/rastrear.html">Rastrear pedido</a></li>
 
-        <h2>Staff</h2>
-        <h4>En Collectoys, nuestro staff es el corazón de la marca. Somos un equipo apasionado por el mundo de las figuras coleccionables, 
-        conformado por personas que no solo trabajan en la empresa,<br> sino que también viven el coleccionismo como parte de su estilo de vida.
-        Cada integrante del equipo comparte un mismo objetivo: brindar la mejor experiencia a nuestros clientes.<br> Desde la selección cuidadosa 
-        de productos hasta la atención personalizada, nos enfocamos en ofrecer figuras originales, en excelente estado y con la calidad que 
-        todo coleccionista merece.<br> Sabemos que detrás de cada compra hay una emoción, una historia y, muchas veces, un sueño cumplido.</h4>
+      </ul>
+    </nav>
+    <div class="navright">
+      <a href="../Paginas/carrito.html" class="icononav"><img src="../imgs/Carrito.png" alt="" width=" 40px"></a>
+      <a href="../Paginas/Login.html" class="icononav"><img src="../imgs/logousuario.png" alt="" width="40px"></a>
+    </div>
+  </header>
+  <!-- FIN DE BARRA DE NAVEGACION -->
 
-        
+  
+<!-- Inicio staff -->
+ 
+  <section class="staff-section">
 
+    <div class="staff-header">
+      <h1>Nuestro Staff</h1>
+      <p>
+        En Collectoys, somos apasionados del coleccionismo.
+        Nuestro equipo trabaja para ofrecerte figuras originales
+        y una experiencia de compra confiable.
+      </p>
+    </div>
 
-        <table border="0" cellspacing="20">
+    <div class="staff-container">
 
- <!-- Staff 01 -->   
+      <div class="card">
+        <img src="../imgs/Staff_01.png">
+        <h3>Jair Sebastian Ordaya Flores</h3>
+        <span>Gerente de Marketing</span>
+        <p>Conecta la marca con la comunidad coleccionista.</p>
+        <a href="mailto:IV70891049@idat.pe" class="btn">Contactar</a>
+      </div>
 
-    <td>
-       <table border="1" width="400" cellpadding="30">
-        <tr><td align="center"><img src = "../imgs/Staff_01.png" width="300"></td></tr>
-        <tr><td align="center"><h4 style = "color:rgb(199, 13, 26)">Gerente de Marketing</h4><h2>Jair Sebastian <br> Ordaya Flores</h2>
-        <br><a href="mailto:IV70891049@idat.pe" target="_blank"><img src = "../imgs/Boton_Contacto.png" width="150"></a></td></tr>    
+      <div class="card">
+        <img src="../imgs/CEO.png">
+        <h3>Jefferson Dan Huayta Nuñez</h3>
+        <span>CEO - Gerente General</span>
+        <p>Lidera la visión y crecimiento de Collectoys.</p>
+        <a href="mailto:IV72217115@idat.pe" class="btn">Contactar</a>
+      </div>
 
+      <div class="card">
+        <img src="../imgs/Staff_02.png">
+        <h3>Jefferson Alexander Sanches Villalobos</h3>
+        <span>Gerente de Ventas</span>
+        <p>Brinda la mejor experiencia de compra al cliente.</p>
+        <a href="mailto:PT61333956@idat.pe" class="btn">Contactar</a>
+      </div>
+
+    </div>
+
+  </section>
+<!-- Fin seccion staff -->
+
+<!-- Inicio locales/horarios -->
+    <div class="info-tienda">
+
+    <!-- LOCALES -->
+    <div class="bloque">
+      <h2>Locales</h2>
+
+      <table class="tabla-info">
+        <thead>
+          <tr>
+            <th>Ciudad</th>
+            <th>Dirección</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Lima</td>
+            <td>Arenales 598</td>
+          </tr>
+
+          <tr>
+            <td>Trujillo</td>
+            <td>Jr. Gamarra 748</td>
+          </tr>
+
+          <tr>
+            <td>Arequipa</td>
+            <td>Av. Ejército 793</td>
+          </tr>
+        </tbody>
       </table>
-    </td>
+    </div>
 
- <!-- CEO --> 
+    <!-- HORARIOS -->
+    <div class="bloque">
+      <h2>Horarios</h2>
 
-    <td>
-       <table border="1" width="400" cellpadding="30">
-        <tr><td align="center"><img src = "../imgs/CEO.png" width="310"></td></tr>
-        <tr><td align="center"><h4 style = "color:rgb(199, 13, 26)">CEO - Gerente General</h4><h2>Jefferson Dan <br> Huayta Nuñez</h2>
-        <br><a href="mailto:IV72217115@idat.pe" target="_blank"><img src = "../imgs/Boton_Contacto.png" width="150"></a></td></tr>
+      <table class="tabla-info">
+        <thead>
+          <tr>
+            <th>Atención</th>
+            <th>Horario</th>
+          </tr>
+        </thead>
 
+        <tbody>
+          <tr>
+            <td>Lunes a Viernes</td>
+            <td><i>9:00am - 7:00pm</i></td>
+          </tr>
+
+          <tr>
+            <td>Sábado y Domingo</td>
+            <td><i>10:00am - 4:00pm</i></td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <td>Delivery</td>
+            <td><strong>Todos los días</strong></td>
+          </tr>
+        </tfoot>
       </table>
-    </td>
+    </div>
 
- <!-- Staff 02 --> 
+  </div>
+<!-- Fin seccion locales/horarios -->
 
-   <td>
-       <table border="1" width="400" cellpadding="30">
-        <tr><td align="center"><img src = "../imgs/Staff_02.png" width="300"></td></tr>
-        <tr><td align="center"><h4 style = "color:rgb(199, 13, 26)">Gerente de Ventas</h4><h2>Jefferson Alexander <br> Sanches Villalobos</h2>
-        <br><a href="mailto:PT61333956@idat.pe" target="_blank"><img src = "../imgs/Boton_Contacto.png" width="150"></a></td></tr>
 
-      </table>
-    </td>
-   
+  <!-- Ubicación de Collectoys -->
+  <table class="mapas" cellpadding="20" align="center">
+    <tr>
 
-    </td>
-    </table>
-    
-</div>
+      <td align="center">
+        <h3>Collectoys - Lima</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.2139632375565!2d-77.037775!3d-12.070397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c7c7eae96d29%3A0x123456789abcdef!2sAvenida+Arenales+598%2C+Jes%C3%BAs+Mar%C3%ADa%2C+Lima%2C+Per%C3%BA!5e0!3m2!1ses!2spe!4v0000000000000"
+          width="500" height="400">
+        </iframe>
+      </td>
 
-<div align="center">
+      <td align="center">
+        <h3>Collectoys - Trujillo</h3>
+        <iframe src="https://www.google.com/maps?q=Jr.+Gamarra+748,+Trujillo,+Per%C3%BA&output=embed" width="500"
+          height="400">
+        </iframe>
+      </td>
 
-    <footer>
-      
-    <h3>Redes sociales</h3>
+      <td align="center">
+        <h3>Collectoys - Arequipa</h3>
+        <iframe src="https://www.google.com/maps?q=Av.+Ej%C3%A9rcito+793,+Arequipa,+Per%C3%BA&output=embed" width="500"
+          height="400">
+        </iframe>
+      </td>
+    </tr>
+  </table>
 
-    <a href="https://www.facebook.com/profile.php?id=100076234667375" target="_blank"> <img src="../imgs/FB_logo.png" width="50"></a>
-    <a href="https://www.tiktok.com/@collectoys_peru" target="_blank"><img src="../imgs/Tiktok_logo.png" width="50"></a>
-    <a href="https://www.instagram.com/collectoys_peru/" target="_blank"><img src="../imgs/Instagram_logo.png" width="50"></a>
-    
-    <h3 id="atencion">Atencion al Cliente</h3>
+  </div>
 
-    <!--Se elimino el target="_blank"-->
-        <a href="../Paginas/PReembolso.html">Política de reembolso</a>
-        <a href="../Paginas/PEnvio.html">Política de envío</a>
-        <a href="../Paginas/TServicio.html">Términos del servicio</a>
-        <a href="../Paginas/reclamo.html">Libro de reclamaciones</a>
-     
-    </footer>
-</div>
+  <footer class="footer">
+
+    <div class="footer-redes">
+      <h3>Redes sociales</h3>
+
+      <div class="redes">
+        <a href="https://www.facebook.com/profile.php?id=100076234667375" target="_blank" class="icono-red">
+          <img src="../imgs/FB_logo.png" alt="Facebook">
+        </a>
+
+        <a href="https://www.tiktok.com/@collectoys_peru" target="_blank" class="icono-red">
+          <img src="../imgs/Tiktok_logo.png" alt="TikTok">
+        </a>
+
+        <a href="https://www.instagram.com/collectoys_peru/" target="_blank" class="icono-red">
+          <img src="../imgs/Instagram_logo.png" alt="Instagram">
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <h3>Atención al Cliente</h3>
+
+      <div class="links">
+        <a href="Paginas/PReembolso.html">Política de reembolso</a>
+        <a href="Paginas/PEnvio.html">Política de envío</a>
+        <a href="Paginas/TServicio.html">Términos del servicio</a>
+        <a href="Paginas/reclamo.html">Libro de reclamaciones</a>
+      </div>
+    </div>
+
+  </footer>
 
 </body>
+
 </html>

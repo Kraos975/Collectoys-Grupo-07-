@@ -1,0 +1,43 @@
+body {
+  margin: 0; /* quitar margen por defecto */
+  padding: 0; /* quitar padding por defecto */
+  text-align: center; /* centra texto horizontalmente */
+  background: black; /* fondo negro */
+}
+
+.temas-container {
+  width: 100%; /* ancho completo */
+  margin: 0; /* margen 0 */
+  padding: 0; /* padding 0 */
+  margin-bottom: 40px; /* espacio debajo del banner */
+}
+
+.temas-container video {
+  width: 100%; /* video ocupa ancho completo */
+  height: 250px; /* altura fija */
+  object-fit: contain; /* mantiene proporción del video */
+  background: black; /* fondo negro detrás del video */
+  display: block; /* block para que no genere espacio extra */
+}
+
+/* Animación de rotación */
+@keyframes rotation {
+  from {
+    transform: rotate(0deg); /* inicio sin rotar */
+  }
+  to {
+    transform: rotate(360deg); /* gira completamente */
+  }
+}
+
+/* Clase para discos */
+.disco {
+  width: 200px; /* tamaño del disco */
+  animation: rotation 10s infinite linear; /* rotación continua */
+}
+
+/* Espaciado entre secciones */
+.tema {
+  margin-bottom: 40px; /* espacio debajo de cada tema */
+  text-align: center; /* centra contenido */
+}

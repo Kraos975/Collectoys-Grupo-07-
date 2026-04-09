@@ -1,103 +1,496 @@
-
 * {
-    color: white;
+    box-sizing: border-box; /* incluye padding y borde dentro del tamaño */
 }
 
-body { 
-    background-image:url(./imgs/FondoWeb.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    font-family: sans-serif;
-    overflow-x: hidden
-
+a {
+    text-decoration: none;
+    color: inherit;
 }
-/* inicio barra de navegacion  */
-#logo {
-    width: 210px;
-    height: 110px;
-    display: block;
+html ,body {
+    scroll-behavior: smooth;
 }
-header {
+body {
+    background-image: url(./imgs/FondoWeb.png); /* fondo */
+    background-position: center; /* centra fondo */
+    background-repeat: no-repeat; /* no repetir */
+    background-size: cover; /* cubrir pantalla */
+    background-attachment: fixed; /* fondo fijo */
+    font-family: sans-serif; /* tipo de letra */
+    margin: 0; /* sin margen */
+    padding: 0; /* sin relleno */
     
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 18px ;
-    margin-top: -8px;
-    margin-left: -8px;
-    margin-right: -8px;
+    color: white; /* texto blanco */
+}
+
+/* barra de navegacion */
+#logo {
+    width: 210px; /* ancho */
+    height: 110px; /* alto */
+    display: block; /* evita espacios */
+}
+
+header {
+    position: sticky; /* se queda arriba */
+    background: #1c1c1c; /* fondo oscuro */
+    display: flex; /* activa flexbox */
+    align-items: center; /* centra vertical */
+    justify-content: space-between; /* separa elementos */
+    padding: 18px; /* espacio interno */
+    z-index: 9999; /* encima de todo */
+    width: 100%; /* ancho completo */
+    top: 0; /* pegado arriba */
 }
 
 .navlinks {
-    display: flex;
-    list-style: none;
-    gap: 30px;
-    font-size: 25px;
+    display: flex; /* en fila */
+    list-style: none; /* sin viñetas */
+    gap: 30px; /* espacio entre items */
+    font-size: 22px; /* tamaño texto */
 }
+
 .navlinks a {
-    text-decoration: none;
-    color: white;
-    position: relative;
-    padding: 10px;
-    display: inline-block;
-    transition: all 0.3 ease;
-    font-weight: bold;
-    
-    
-}
-.navlinks a::after { 
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #B91C1C;
-    border-radius: 50px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-    opacity: 0;
-    transition: all 0.3s ease-in-out;
-    
+    text-decoration: none; /* sin subrayado */
+    color: white; /* texto blanco */
+    position: relative; /* base para ::after */
+    padding: 10px; /* espacio interno */
+    display: inline-block; /* respeta padding */
+    transition: all 0.3 ease; /* animación */
+    font-weight: bold; /* negrita */
 }
 
-.navlinks a:hover {
-    color: #000;
-}
-.navlinks a:hover::after { 
-    top: 50%;
-    opacity: 1;
+.navlinks a::after {
+    content: ""; /* elemento decorativo */
+    position: absolute; /* se posiciona encima */
+    width: 100%; /* ancho completo */
+    height: 100%; /* alto completo */
+    background: #B91C1C; /* fondo rojo */
+    border-radius: 50px; /* bordes redondos */
+    top: 50%; /* centro vertical */
+    left: 50%; /* centro horizontal */
+    transform: translate(-50%, -50%); /* centra exacto */
+    z-index: -1; /* detrás del texto */
+    opacity: 0; /* invisible */
+    transition: all 0.3s ease-in-out; /* animación */
 }
 
-.icononav { 
-    display: inline-flex;
-    gap: 30px;
-    padding: 8px;
-    position: relative;
-    z-index: 1 ;
 
+
+.navlinks a:hover::after {
+    top: 50%; /* mantiene centro */
+    opacity: 1; /* aparece fondo */
+}
+
+.icononav {
+    display: inline-flex; /* elementos en línea flex */
+    gap: 15px; /* espacio entre iconos */
+    padding: 8px; /* espacio interno */
+    position: relative; /* base para ::after */
+    z-index: 1; /* encima del fondo */
 }
 
 .icononav::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #B91C1C;
-    border-radius: 50%;
-    top: 50%;
+    content: ""; /* decorativo */
+    position: absolute; /* sobre el elemento */
+    width: 100%; /* ancho completo */
+    height: 100%; /* alto completo */
+    background: #B91C1C; /* rojo */
+    border-radius: 50%; /* círculo */
+    top: 50%; /* centro */
     left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    z-index: -1;
-    opacity: 0;
-    transition: all 0.3s ease-in-out;
-    
+    transform: translate(-50%, -50%) scale(0); /* pequeño */
+    z-index: -1; /* detrás */
+    opacity: 0; /* invisible */
+    transition: all 0.3s ease-in-out; /* animación */
 }
 
 .icononav:hover::after {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
+    opacity: 1; /* aparece */
+    transform: translate(-50%, -50%) scale(1); /* crece */
 }
- /* FIN DE BARRA DE NAVEGACION */
+ /* FIN DE HEADER  */
+
+/* Inicio banner novedades */
+.seccion-novedades{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.banner-novedades {
+    display: grid;
+    place-items: center;
+    position: relative;
+    background-color: #000;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    min-height: 500px;
+    overflow: hidden;
+    width: 90%;
+}
+.banner-novedades::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(imgs/SeccionNovedades.png);
+    transition: transform 0.6s, filter 0.6s;
+}   
+
+.banner-novedades:hover::before {
+    filter: blur(8px);
+    transform: scale(1.1);
+}
+.contenido-banner h1 {
+    font-weight: 900;
+}
+.contenido-banner {
+    font-weight: bold;
+    font-size: 20px;
+    z-index: 2;
+    
+}
+.btn-novedades {
+    display: inline-block;
+    margin-top: 40px;
+    background-color: white;
+    color: red;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+.btn-novedades:hover {
+    transform: scale(1.2);
+    background-color: red;
+    color: white;
+    
+}
+
+/* Fin de banner novedades */
+
+/* ofertas videos */
+.titulo-ofertas {
+    display: flex; /* flex */
+    justify-content: center; /* centra */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8); /* sombra */
+    font-weight: 800; /* grueso */
+}
+
+.section-videos {
+    display: grid; /* grid */
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+    gap: 20px; /* espacio */
+    padding: 20px; /* relleno */
+}
+
+.contenedor-video {
+    position: relative; /* base overlay */
+    width: 100%; /* ancho */
+    border-radius: 15px; /* bordes */
+    overflow: hidden; /* oculta exceso */
+}
+
+.contenedor-video video {
+    width: 100%; /* ocupa todo */
+    display: block; /* sin espacios */
+    height: auto; /* proporcional */
+    object-fit: cover; /* recorta */
+}
+
+.info-card {
+    position: absolute; /* encima */
+    display: grid; /* grid */
+    place-items: center; /* centra */
+    inset: 0; /* ocupa todo */
+    background: rgba(0, 0, 0, 0.7); /* fondo oscuro */
+    opacity: 0; /* oculto */
+    transition: opacity 0.3s ease; /* animación */
+}
+
+.contenedor-video:hover .info-card {
+    opacity: 1; /* aparece */
+}
+
+
+.btn-carrito {
+    text-decoration: none; /* sin subrayado */
+    padding: 12px 24px; /* tamaño */
+    border-radius: 30px; /* redondo */
+    color: red; /* texto rojo */
+    background: white; /* fondo blanco */
+    border: none; /* sin borde */
+    font-weight: bold; /* negrita */
+    font-size: 14px; /* tamaño */
+    transform: translateY(10px); /* baja un poco */
+    transition: transform 0.3 ease, background-color 0.2s; /* animación */
+    cursor: pointer; /* mano */
+}
+
+.btn-carrito:hover {
+    color: white; /* texto blanco */
+    background: red; /* fondo rojo */
+    font-weight: bold; /* mantiene negrita */
+    transform: scale(1.3); /* agranda */
+    transition: all 0.3s; /* animación */
+}
+/* Fin de ofertas */
+.categorias {
+    padding: 40px 20px;
+}
+.contenedor-categorias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    
+}
+.card {
+    width: 250px;
+    overflow: hidden;
+    border-radius: 12px;
+    transition: transform 0.3s;
+}
+.card:hover {
+    transform: translate;
+}
+/* Inicio Seccion categorias */
+.categorias h1 {
+    display: flex;
+    justify-content: center;
+}
+.contenedor-categorias {
+    display: flex;
+    width: 100%;
+    max-width: 900px;
+    height: 500px;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+.item-categorias {
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: all 0.5s;
+
+}
+
+.item-categorias a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.item-categorias img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.item-categorias:hover {
+    flex: 4;
+    filter: blur(0px);
+}
+
+/* Fin de seccion categorias */
+
+
+/*  Inicio  productos */
+.contenedor-productos {
+    display: flex; /* flexbox */
+    flex-wrap: wrap; /* baja si no cabe */
+    justify-content: center; /* centra */
+    gap: 20px; /* espacio entre cards */
+    margin-bottom: 40px; /* margen inferior */
+}
+
+/* card producto */
+.producto-card {
+    background-color: #1c1c1c;
+    width: 250px; /* ancho fijo */
+    border-radius: 15px; /* bordes redondos */
+    overflow: hidden; /* oculta exceso */
+    text-align: center; /* centra texto */
+    transition: all 0.3s ease; /* animación */
+    padding-bottom: 15px; /* espacio interno */
+    margin: 10px; /* margen exterior */
+}
+
+.producto-card:hover {
+    transform: scale(1.05); /* agranda */
+    background-color: #1c1c1c; /* fondo negro */
+    box-shadow: 0px 10px 20px red;
+}
+
+/* imagen producto */
+.producto-img {
+    width: 100%; /* ancho completo */
+    padding: 20px; /* relleno */
+}
+
+/* información producto */
+.producto-info {
+    padding: 10px; /* relleno interno */
+}
+
+.logo-mini {
+    height: 70px;
+    width: 120; /* tamaño logo pequeño */
+}
+
+/* precio */
+.producto-info h2 {
+    color: white; /* color del precio */
+    font-weight:700;
+}
+
+/* botón comprar */
+.btn-comprar {
+    display: inline-block; /* bloque en línea */
+    margin-top: 15px; /* espacio arriba */
+    padding: 12px 20px; /* relleno */
+    background-color: white; /* fondo rojo */
+    color: red; /* texto blanco */
+    border-radius: 10px; /* bordes redondos */
+    font-weight: bold; /* negrita */
+    transition: all 0.3s ease; /* animación */
+}
+
+.btn-comprar:hover {
+    background-color: red; /* cambia fondo */
+    color: white; /* cambia texto */
+    transform: scale(1.15); /* agranda */
+}
+
+/* Fin de productos */
+
+/* mapas */
+iframe {
+    width: 100%; /* ocupa todo */
+}
+
+/* login */
+.section-login {
+    display: flex; /* flex */
+    align-items: center; /* centra vertical */
+    justify-content: center; /* centra horizontal */
+}
+
+.contenedor-login {
+    background: #1c1c1c; /* fondo */
+    width: 80%; /* ancho */
+    place-items: center; /* centra contenido */
+    border-radius: 50px; /* bordes */
+    padding: 20px; /* relleno */
+    margin: 20px 0 0; /* margen arriba */
+    display: flex; /* flex */
+    align-items: center; /* centra */
+    justify-content: center; /* centra */
+    flex-direction: column; /* en columna */
+    max-width: 450px; /* límite */
+    min-height: 80vh; /* alto mínimo */
+    z-index: 2; /* encima */
+}
+
+.contenedor-login input[type="email"],
+.contenedor-login input[type="password"] {
+    width: 100%; /* ocupa todo */
+    padding: 10px; /* relleno */
+    border-radius: 10px; /* redondeado */
+    border: none; /* sin borde */
+    color: black; /* texto negro */
+}
+
+.contenedor-login input[type="submit"] {
+    padding: 15px; /* tamaño */
+    display: flex; /* flex */
+    justify-content: center; /* centra */
+    width: 100%; /* ancho completo */
+    background-color: white; /* fondo */
+    color: red; /* texto */
+    border-radius: 30px; /* redondo */
+    border: none; /* sin borde */
+    cursor: pointer; /* mano */
+    font-weight: bold; /* negrita */
+}
+
+.contenedor-login input[type="submit"]:hover {
+    transform: scale(1.25); /* agranda */
+    transition: all 0.3s; /* animación */
+    background-color: red; /* cambia color */
+    color: white; /* texto blanco */
+}
+
+.contenedor-login form {
+    font-weight: bold; /* negrita */
+}
+
+.link-registrate {
+    font-weight: bold; /* negrita */
+}
+
+.link-registrate:hover {
+    color: red; /* cambia color */
+}
+/* fin de login */
+
+
+/* locales y horarios */
+.info-tienda {
+    display: flex; /* flex */
+    justify-content: center; /* centra */
+    align-items: center; /* centra */
+    gap: 40px; /* espacio */
+    margin: 80px auto; /* margen */
+    flex-wrap: wrap; /* baja en responsive */
+    width: 100%; /* ancho */
+}
+
+.bloque {
+    text-align: center; /* centra texto */
+    background: rgba(0, 0, 0, 0.6); /* fondo oscuro */
+    padding: 20px; /* relleno */
+    border-radius: 20px; /* bordes */
+    backdrop-filter: blur(5px); /* desenfoque */
+    display: flex; /* flex */
+    flex-direction: column; /* columna */
+    align-items: center; /* centra */
+}
+
+.bloque h2 {
+    margin-bottom: 15px; /* espacio abajo */
+}
+
+.tabla-info {
+    width: 320px; /* ancho */
+    background: #fff; /* fondo blanco */
+    border-radius: 15px; /* bordes */
+    overflow: hidden; /* oculta exceso */
+    color: #000; /* texto negro */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); /* sombra */
+    border-collapse: collapse; /* une bordes */
+}
+
+.tabla-info thead {
+    background: #111; /* fondo oscuro */
+    color: #fff; /* texto blanco */
+}
+
+.tabla-info th,
+.tabla-info td {
+    padding: 14px; /* relleno */
+    border-bottom: 1px solid #ddd; /* línea */
+    text-align: center; /* centra */
+}
+
+.tabla-info tbody tr:hover {
+    background: #f5f5f5; /* cambia fondo */
+    color: #000; /* texto negro */
+    transition: 0.2s; /* animación */
+}
+
+.tabla-info tfoot {
+    background: #eee; /* fondo gris */
+    font-weight: bold; /* negrita */
+}

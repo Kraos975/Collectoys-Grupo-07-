@@ -1,90 +1,117 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../imgs/Favicon.png" type="image/png">
-    <title>Rastrear mi pedido</title>
-    <link rel="stylesheet" href="../style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../imgs/Favicon.png" type="image/png">
+  <title>Rastrear mi pedido</title>
+
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../style-pagprincipal2.css">
+  <link rel="stylesheet" href="../css/style-rastrear.css">
 </head>
+
 <body>
 
-<!-- INICIO BARRA DE NAVEGACION -->
-    <header>
-        
-        <a href="../index.html"><img src="../imgs/barralogo.png" alt="" id="logo"></a>
-        <nav>
-            <ul class="navlinks">
-                
-                <li><a href="../Paginas/Registro.html">Registro</a></li>
-                <li><a href="../Paginas/Login.html">Login</a></li>
-                <li><a href="../Paginas/carrito.html">Carrito</a></li>
-                <li><a href="../Documentos/Catalogo Collectoys.pdf" target="_blank">Catalogo</a></li>
-                <li><a href="../Paginas/Staff.html">Staff</a></li>
-                <li><a href="../Paginas/Musica.html">Temas</a></li>
-                <li><a href="../Paginas/rastrear.html">Rastrear pedido</a></li>
+  <!-- NAV -->
+  <header>
+    <a href="../index.html"><img src="../imgs/barralogo.png" id="logo"></a>
 
-            </ul>
-        </nav>
-            <div class="navright">
-                <a href="../Paginas/carrito.html" class="icononav"><img src="../imgs/Carrito.png" alt="" width=" 40px"></a>
-                <a href="../Paginas/Login.html paginas/login.html" class="icononav"><img src="../imgs/logousuario.png" alt="" width="40px"></a>
-            </div>
-    </header>
-<!-- FIN DE BARRA DE NAVEGACION -->
+    <nav>
+      <ul class="navlinks">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../Documentos/Catalogo Collectoys.pdf" target="_blank">Catalogo</a></li>
+        <li><a href="../Paginas/Staff.html">Staff</a></li>
+        <li><a href="../Paginas/Musica.html">Temas</a></li>
+        <li><a href="../Paginas/rastrear.html">Rastrear pedido</a></li>
+      </ul>
+    </nav>
 
-<section align="center">
-    <h1>Rastrea tu pedido</h1><br><br>
-<Table align="center" border="1" cellpadding="40">
-    <thead>
-        <th>Producto</th>
-        <th>  Descripcion </th>
-        <th>Courier</th>
-        <th> Estado del pedido</th>
-    </thead>
-    <tbody>
-        <tr>
-            <td><img src="../imgs/FunkoDragonball.png" width="200"></td>
+    <div class="navright">
+      <a href="../Paginas/carrito.html"><img src="../imgs/Carrito.png" width="40"></a>
+      <a href="../Paginas/Login.html"><img src="../imgs/logousuario.png" width="40"></a>
+    </div>
+  </header>
+
+  <!-- SECCIÓN -->
+  <section class="rastreo">
+    <h1 class="titulo">Rastrea tu pedido</h1>
+
+    <div class="tabla-container">
+      <table class="tabla-rastreo">
+        <thead>
+          <tr>
+            <th>Producto</th>
+            <th>Descripción</th>
+            <th>Courier</th>
+            <th>Estado del pedido</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td><img src="../imgs/FunkoDragonball.png" class="img-producto"></td>
             <td>Funko pop Goku ssj4</td>
             <td>Serpost</td>
-            <td><b>Procesando en almacen</b></td>
-        </tr>
-        <tr>
-            <td><img src="../imgs/FunkoHH.png" width="200"></td>
+            <td><span class="estado almacen">Procesando en almacén</span></td>
+          </tr>
+
+          <tr>
+            <td><img src="../imgs/FunkoHH.png" class="img-producto"></td>
             <td>Funko pop HH</td>
             <td>Olva courier</td>
-            <td><b>En proceso de entrega</b></td>
-        </tr>
-        <tr>
-            <td><img src="../imgs/FunkoMakanaky.png" width="180"></td>
+            <td><span class="estado envio">En proceso de entrega</span></td>
+          </tr>
+
+          <tr>
+            <td><img src="../imgs/FunkoMakanaky.png" class="img-producto"></td>
             <td>Funko pop Makanaky</td>
             <td>Urbano express</td>
-            <td><b>Procesando en almacen</b></td>
-        </tr>
-    </tbody>
-</Table>
-    
-</section>
-<marquee direction=""> <img src="../imgs/Couriers.png" alt=""></marquee>
+            <td><span class="estado almacen">Procesando en almacén</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-<div align="center">
+    <marquee direction>
+      <img src="../imgs/Couriers.png" alt="Couriers">
+    </marquee>
+  </section>
 
-    <footer>
-      
-    <h3>Redes sociales</h3>
+  <footer class="footer">
 
-    <a href="https://www.facebook.com/profile.php?id=100076234667375" target="_blank"> <img src="../imgs/FB_logo.png" width="50"></a>
-    <a href="https://www.tiktok.com/@collectoys_peru" target="_blank"><img src="../imgs/Tiktok_logo.png" width="50"></a>
-    <a href="https://www.instagram.com/collectoys_peru/" target="_blank"><img src="../imgs/Instagram_logo.png" width="50"></a>
+    <div class="footer-redes">
+      <h3>Redes sociales</h3>
 
-    <h3 id="atencion">Atencion al Cliente</h3>
+      <div class="redes">
+        <a href="https://www.facebook.com/profile.php?id=100076234667375" target="_blank" class="icono-red">
+          <img src="../imgs/FB_logo.png" alt="Facebook">
+        </a>
 
-        <a href="../Paginas/PReembolso.html">Política de reembolso</a>
-        <a href="../Paginas/PEnvio.html">Política de envío</a>
-        <a href="../Paginas/TServicio.html">Términos del servicio</a>
-        <a href="../Paginas/reclamo.html">Libro de reclamaciones</a>
-   
-    </footer>
-</div>
+        <a href="https://www.tiktok.com/@collectoys_peru" target="_blank" class="icono-red">
+          <img src="../imgs/Tiktok_logo.png" alt="TikTok">
+        </a>
+
+        <a href="https://www.instagram.com/collectoys_peru/" target="_blank" class="icono-red">
+          <img src="../imgs/Instagram_logo.png" alt="Instagram">
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <h3>Atención al Cliente</h3>
+
+      <div class="links">
+        <a href="Paginas/PReembolso.html">Política de reembolso</a>
+        <a href="Paginas/PEnvio.html">Política de envío</a>
+        <a href="Paginas/TServicio.html">Términos del servicio</a>
+        <a href="Paginas/reclamo.html">Libro de reclamaciones</a>
+      </div>
+    </div>
+
+  </footer>
+
 </body>
+
 </html>
