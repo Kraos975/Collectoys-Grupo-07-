@@ -365,10 +365,6 @@ header {
 
 /* Fin de productos */
 
-/* mapas */
-iframe {
-    width: 100%; /* ocupa todo */
-}
 
 /* login */
 .section-login {
@@ -434,8 +430,115 @@ iframe {
     color: red; /* cambia color */
 }
 /* fin de login */
+ 
+/* INICIO REGISTRO */
 
 
+/* INICIO CARTAS PUBLICACIONES */
+.contenedor-publicaciones {
+    display: flex; /* flexbox */
+    flex-wrap: wrap; /* baja si no entra */
+    justify-content: center; /* centra horizontal */
+    gap: 40px; /* espacio entre cartas */
+    margin: 20px; /* margen exterior */
+}
+
+.carta-publicacion {
+    background-color: #1c1c1c;
+    flex: 1 1 320px; /* flexible, mínimo 320px */
+    max-width: 480px; /* ancho máximo */
+    border: 3px solid white; /* borde blanco */
+    border-radius: 15px; /* bordes redondos */
+    overflow: hidden; /* oculta exceso */
+    text-align: center; /* centra texto */
+    transition: 0.3s; /* animación */
+}
+
+.carta-publicacion img {
+    width: 100%; /* ocupa todo el ancho */
+    height: 220px; /* alto fijo */
+    object-fit: cover; /* recorta si es necesario */
+}
+
+.carta-publicacion h2 {
+    padding: 15px; /* espacio interno */
+}
+
+.carta-publicacion:hover {
+    transform: scale(1.05); /* agranda al pasar el mouse */
+    background-color: black; /* fondo negro */
+}
+
+/* FIN DE CARTAS DE PUBLICACIONES */
+
+
+
+/* footer general */
+.footer {
+    background-color: #1c1c1c;
+    text-align: center; /* centra texto */
+    padding: 20px; /* relleno */
+    margin-top: 50px; /* espacio arriba */
+}
+
+/* redes sociales */
+.redes {
+    display: flex; /* flexbox */
+    justify-content: center; /* centra */
+    gap: 20px; /* espacio entre iconos */
+    margin-top: 15px; /* margen superior */
+}
+
+/* iconos redes */
+.icono-red {
+    display: inline-block; /* bloque en línea */
+    padding: 12px; /* relleno */
+    border-radius: 50%; /* circular */
+    transition: all 0.3s ease; /* animación */
+}
+
+.icono-red:hover {
+    background-color: red; /* fondo rojo al pasar */
+    transform: scale(1.2); /* agranda */
+}
+
+.icono-red img {
+    width: 40px; /* tamaño imagen */
+    transition: all 0.3s ease; /* animación */
+}
+
+.icono-red:hover img {
+    filter: brightness(0) invert(1); /* cambia color icono */
+}
+
+/* links footer */
+.footer-links {
+    margin-top: 30px; /* margen superior */
+}
+
+.links {
+    display: flex; /* flexbox */
+    justify-content: center; /* centra */
+    gap: 25px; /* espacio entre links */
+    flex-wrap: wrap; /* baja en celular */
+    margin-top: 10px; /* margen superior */
+}
+
+/* estilo links */
+.links a {
+    font-weight: bold;
+    text-decoration: none; /* sin subrayado */
+    color: white; /* texto blanco */
+    transition: all 0.3s ease; /* animación */
+}
+
+.links a:hover {
+    color: red;
+    transform: scale(1.1); /* agranda */
+}
+
+
+/* SUB PAGINA STAFF  */
 /* locales y horarios */
 .info-tienda {
     display: flex; /* flex */
@@ -494,3 +597,11 @@ iframe {
     background: #eee; /* fondo gris */
     font-weight: bold; /* negrita */
 }
+
+/* FIN DE LOCALES Y HORARIOS  */
+
+/* mapas */
+iframe {
+    width: 100%; /* ocupa todo */
+}
+/* FIN DE STAFF */
