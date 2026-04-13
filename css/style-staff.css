@@ -1,0 +1,96 @@
+/* GENERAL */
+body {
+    background: #0f0f0f; /* fondo oscuro general */
+    color: white; /* texto blanco por defecto */
+    font-family: 'Segoe UI', sans-serif; /* fuente principal */
+    margin: 0; /* quita margen por defecto */
+}
+
+/* SECCIÓN */
+.staff-section {
+    padding: 50px 20px; /* espacio interno arriba/abajo y lados */
+    text-align: center; /* centra el contenido */
+}
+
+/* TÍTULO */
+.staff-header h1 {
+    color: #ff2a2a; /* color rojo */
+    margin-bottom: 10px; /* espacio debajo del título */
+}
+
+.staff-header p {
+    color: #ccc; /* texto gris claro */
+    max-width: 700px; /* ancho máximo del párrafo */
+    margin: auto; /* centra horizontalmente */
+}
+
+/* CONTENEDOR */
+.staff-container {
+    display: flex; /* usa flexbox */
+    justify-content: center; /* centra horizontalmente los items */
+    gap: 30px; /* espacio entre tarjetas */
+    flex-wrap: wrap; /* permite que las tarjetas bajen a otra fila */
+    margin-top: 40px; /* espacio arriba */
+}
+
+/* CARDS */
+.card {
+    background: #1a1a1a; /* fondo de cada tarjeta */
+    border-radius: 12px; /* esquinas redondeadas */
+    padding: 20px; /* espacio interno */
+    width: 280px; /* ancho fijo */
+    border: 1px solid #2a2a2a; /* borde suave */
+    transition: 0.3s; /* transición suave para hover */
+}
+
+/* HOVER */
+.card:hover {
+    transform: translateY(-5px); /* levanta la tarjeta */
+    border-color: #ff2a2a; /* cambia borde al pasar mouse */
+}
+
+/* IMAGEN */
+.card img {
+    width: 100%; /* ocupa todo el ancho de la tarjeta */
+    border-radius: 10px; /* bordes redondeados */
+}
+
+/* NOMBRE */
+.card h3 {
+    margin: 10px 0; /* espacio arriba y abajo del nombre */
+}
+
+/* CARGO */
+.card span {
+    color: #ff2a2a; /* texto rojo */
+    font-weight: bold; /* negrita */
+}
+
+/* DESCRIPCIÓN */
+.card p {
+    font-size: 14px; /* tamaño de texto más pequeño */
+    color: #bbb; /* texto gris medio */
+}
+
+/* BOTÓN */
+.btn {
+    display: inline-block; /* bloque en línea */
+    margin-top: 10px; /* espacio arriba */
+    padding: 8px 18px; /* espacio interno */
+    background: #ff2a2a; /* fondo rojo */
+    color: white; /* texto blanco */
+    text-decoration: none; /* quita subrayado */
+    border-radius: 20px; /* bordes redondeados */
+}
+
+.btn:hover {
+    background: white; /* fondo blanco al pasar mouse */
+    color: #ff2a2a; /* texto rojo al pasar mouse */
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .card {
+        width: 90%; /* tarjetas ocupan casi todo el ancho en pantallas pequeñas */
+    }
+}

@@ -1,422 +1,204 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="imgs/Favicon.png" type="image/png">
-    <title>Collectoys - Tu tienda de coleccionables</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="/css/style-pag-principal.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="imgs/Favicon.png" type="image/png">
+  <title>Collectoys - Tu tienda de coleccionables</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/css/style-pag-principal.css">
+  <link rel="stylesheet" href="style-pagprincipal2.css">
 </head>
+
 <body>
 
-<!-- Logo, Registro, Login, Carrito y Categorias -->  
+  <header>
 
-    <header>
-        
-        <a href="index.html"><img src="./imgs/barralogo.png" alt="" id="logo"></a>
-        <nav>
-            <ul class="navlinks">
-                
-                <li><a href="Paginas/Registro.html">Registro</a></li>
-                <li><a href="Paginas/Login.html">Login</a></li>
-                <li><a href="Paginas/carrito.html">Carrito</a></li>
-                <li><a href="Documentos/Catalogo Collectoys.pdf" target="_blank">Catalogo</a></li>
-                <li><a href="Paginas/Staff.html">Staff</a></li>
-                <li><a href="Paginas/Musica.html">Temas</a></li>
-                <li><a href="Paginas/rastrear.html">Rastrear pedido</a></li>
+    <a href="index.html"><img src="./imgs/barralogo.png" alt="" id="logo"></a>
+    <nav>
+      <ul class="navlinks">
 
-            </ul>
-        </nav>
-            <div class="navright">
-                <a href="./Sub paginas/Carrito.html" class="icononav"><img src="./imgs/Carrito.png" alt="" width=" 40px"></a>
-                <a href="./Sub paginas/login.html" class="icononav"><img src="./imgs/logousuario.png" alt="" width="40px"></a>
-            </div>
-    </header>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#seccion-categorias">Categorias</a></li>
+        <li><a href="Paginas/Staff.html">Conocenos</a></li>
+        <li><a href="Paginas/Musica.html">Temas</a></li>
+        <li><a href="Paginas/rastrear.html">Rastrear pedido</a></li>
 
-
-<!-- Logo, Registro, Login, Carrito y Categorias -->  
-
-    
-
-    <br><br><br>
-
-     <div align="center">
-
-     <video   loop width="360" muted autoplay >
-
-             <source src="vids/Promo01.mp4" type="video/mp4">
-
-    </video>
-
-    <video  loop width="360" muted autoplay>
-
-             <source src="vids/Promo02.mp4" type="video/mp4">
-             
-    </video>
-
-    <video loop width="360" muted autoplay>
-
-             <source src="vids/Video principal main.mp4" type="video/mp4">
-             
-    </video>
-
-    <video  loop width="360" muted autoplay>
-
-             <source src="vids/Promo03.mp4" type="video/mp4">
-             
-    </video>
-
-    <video  loop width="360" muted autoplay>
-
-             <source src="vids/Promo04.mp4" type="video/mp4">
-             
-    </video>
-
-    </div>    
-
-    <br><br>
-
-<!-- Titulo de los productos -->   
-    
-    <div align="center">
-      <h1> Funkos de la serie HunterXHunter </h1>
-      <h3> Funkos de la serie de manga escrita e ilustrada por Yoshihiro Togashi</h3>
-      <img src = "imgs/HxH_Logo.png"width="150" id="hunterxhunter"><br>
-      <marquee> <img src="imgs/Marquee_01.png" width="1000"></marquee>
+      </ul>
+    </nav>
+    <div class="navright">
+      <a href="Paginas/carrito.html" class="icononav"><img src="./imgs/Carrito.png" alt="" width=" 40px"></a>
+      <a href="Paginas/Login.html" class="icononav"><img src="./imgs/logousuario.png" alt="" width="40px"></a>
     </div>
-    <br>
+  </header>
+  <!-- Logo, Registro, Login, Carrito y Categorias -->
 
-<!-- Inicio de la tabla -->    
-    <div class="contenedor-productos">
-
- <!-- Producto 1 -->   
-
-    <div >
-      <table  class="tabla-1-punko">
-        <tr><td class="td-tabla-funko"><img src="imgs/HxH01.jpg" width="200"></td></tr>
-        <tr><td class="td-tabla-funko" ><img src = "imgs/HxH_Logo.png" width="50"><h5>Funko Pop</h5><b>Killua Zoldyck</b><br><h1>S/.55</h1></td></tr>
-        <tr><td class="td-tabla-funko" ><a href="Paginas/carrito.html"><button class="boton-tabla-funko">Comprar</button></td></tr>
-      </table>
+  <!-- Inicio banner novedades -->
+  <section class="seccion-novedades">
+  <div class="banner-novedades">
+    <div class="contenido-banner">
+      <h1> COLECCIONA <br> TUS PASIONES</h1>
+      <p>Las mejores figuras de tus heroes favoritos en un solo lugar</p>
+      <a href="#" class="btn-novedades"> VER NOVEDADES</a>
     </div>
+  </div>
+  </section>
+   <!-- Fin de banner novedades -->
 
-<!-- Producto 2 --> 
+<!-- Inicio de Seccion Categorias --> 
 
-    <div>
-      <table class="tabla-1-punko" >
-        <tr><td class="td-tabla-funko"><img src="imgs/HxH02.jpg" width="200"></td></tr>
-        <tr><td class="td-tabla-funko"><img src ="imgs/HxH_Logo.png" width="50"><h5>Funko Pop</h5><b>Kurapika Blood Moon</b><br><h1>S/.55</h1></td></tr>
-        <tr><td class="td-tabla-funko"><a href="Paginas/carrito.html"><button class="boton-tabla-funko">Comprar</button></td></tr>
-      </table>
+<section class="categorias" id="seccion-categorias">
+  <h1>Nuestras Categorias Destacadas</h1>
+  <div class="contenedor-categorias">
+    <div class="item-categorias">
+      <a href="Paginas/dragonball.html"><img src="imgs/CategoriaDB.png" alt=""></a>
     </div>
-
-<!-- Producto 3 --> 
-
-    <div>
-      <table class="tabla-1-punko" >
-        <tr><td class="td-tabla-funko"><img src="imgs/HxH03.jpg" width="200"></td></tr>
-        <tr><td class="td-tabla-funko"><img src = "imgs/HxH_Logo.png" width="50"><h5>Funko Pop</h5><b>Kurapika</b><br><h1>S/.50</h1></td></tr>
-        <tr><td class="td-tabla-funko"><a href="Paginas/carrito.html"><button class="boton-tabla-funko">Comprar</button></td></tr>
-      </table>
+    <div class="item-categorias">
+      <a href="Paginas/hunterxhunter.html"><img src="imgs/HunterxHunterCategoria.png" alt=""></a>
     </div>
-
-<!-- Producto 4 -->  
-
-    <div>
-      <table class="tabla-1-punko">
-        <tr><td class="td-tabla-funko"><img src="imgs/HxH04.jpg" width="200"></td></tr>
-        <tr><td class="td-tabla-funko"><img src = "imgs/HxH_Logo.png" width="50"><h5>Funko Pop</h5><b>Kite</b><br><h1>S/.50</h1></td></tr>
-        <tr><td class="td-tabla-funko"><a href="Paginas/carrito.html"><button class="boton-tabla-funko">Comprar</button></td></tr>
-      </table>
+    <div class="item-categorias">
+      <a href="Paginas/naruto.html"><img src="imgs/NarutoCategoria.png" alt=""></a>
     </div>
-
-<!-- Producto 5 -->  
-
-    <div>
-      <table class="tabla-1-punko" >
-        <tr><td class="td-tabla-funko"><img src="imgs/HxH05.jpg" width="200"></td></tr>
-        <tr><td class="td-tabla-funko"><img src = "imgs/HxH_Logo.png" width="50"><h5>Funko Pop</h5><b>Netero</b><br><h1>S/.55</h1></td></tr>
-        <tr><td class="td-tabla-funko"><a href="Paginas/carrito.html"><button class="boton-tabla-funko">Comprar</button></td></tr>
-      </table>
+    <div class="item-categorias">
+      <a href="Paginas/onepiece.html"><img src="imgs/OncePieceCategoria.png" alt=""></a>
     </div>
+  </div>
+</section>
 
-<!-- Producto 6 -->    
+<!-- Fin de seccion Categorias -->
+ 
 
-    <div>
-      <table class="tabla-1-punko" >
-        <tr><td class="td-tabla-funko"><img src="imgs/HxH06.jpg" width="200"></td></tr>
-        <tr><td class="td-tabla-funko"><img src = "imgs/HxH_Logo.png" width="50"><h5>Funko Pop</h5><b>Feitan</b><br><h1>S/.55</h1></td></tr>
-        <tr><td class="td-tabla-funko"><a href="Paginas/carrito.html"><button class="boton-tabla-funko">Comprar</button></td></tr>
-      </table>
-    </div>
-     
-    </div>
+  <!-- INICIO SECCION OFERTAS -->
+  <h1 class="titulo-ofertas">Ultimas Novedades en Oferta!!</h1> <br><br>
+  <section class="section-videos">
+    <article class="video-card">
+      <div class="contenedor-video">
+        <video loop muted autoplay>
+          <source src="vids/Promo01.mp4" type="video/mp4">
+        </video>
+        <div class="info-card">
+          <button class="btn-carrito"><a href="Paginas/carrito.html">Agregar al carrito</a></button>
+        </div>
+      </div>
+    </article>
 
-<!-- Fin de la tabla --> 
-    
+    <article class="video-card">
+      <div class="contenedor-video">
+        <video loop muted autoplay>
+          <source src="vids/Promo02.mp4" type="video/mp4">
+        </video>
+        <div class="info-card">
+          <button class="btn-carrito"><a href="Paginas/carrito.html">Agregar al carrito</a></button>
+        </div>
+      </div>
+    </article>
 
-<!-- Titulo de los productos -->   
-    
-    <div align="center">
-    <h1> Funkos Chase </h1>
-    <h3> Variantes raras y limitadas de una figura Funko Pop estándar, 
-        generalmente producida en una proporción de 1 por cada 6 unidades</h3>
-    <img src = "imgs/Chase.png" width="150" id="chase"><br>
-    <marquee> <img src="imgs/Marquee_02.png" width="2500"></marquee>
-    </div>
-    <br>
+    <article class="video-card">
+      <div class="contenedor-video">
+        <video loop muted autoplay>
+          <source src="vids/Promo03.mp4" type="video/mp4">
+        </video>
+        <div class="info-card">
+          <button class="btn-carrito"><a href="Paginas/carrito.html">Agregar al carrito</a></button>
+        </div>
+      </div>
+    </article>
 
-<!-- Inicio de la tabla -->    
-    <div class="contenedor-productos">
+    <article class="video-card">
+      <div class="contenedor-video">
+        <video loop muted autoplay>
+          <source src="vids/Promo04.mp4" type="video/mp4">
+        </video>
+        <div class="info-card">
+          <button class="btn-carrito"><a href="Paginas/carrito.html">Agregar al carrito</a></button>
+        </div>
+      </div>
+    </article>
 
- <!-- Producto 1 -->   
+  </section>
 
-    <div >
-      <table class="tabla-1-punko">
-        <tr><td class="td-tabla-funko"><img src="imgs/Chase01.png" width="208"></td></tr>
-        <tr><td class="td-tabla-funko"><img src = "imgs/Chase.png" width="50"><h5>Funko Pop Chase</h5><b>Boruto</b><br><h1>S/.140</h1></td></tr>
-        <tr><td class="td-tabla-funko"><a href="Paginas/carrito.html"><button class="boton-tabla-funko">Comprar</button></td></tr>
-      </table>
-    </div>
+  <!-- FIN DE SECCION OFERTAS -->
 
-<!-- Producto 2 --> 
 
-    <div >
-      <table class="tabla-1-punko">
-        <tr><td class="td-tabla-funko"><img src="imgs/Chase02.png" width="200"></td></tr>
-        <tr><td class="td-tabla-funko"><img src = "imgs/Chase.png" width="50"><h5>Funko Pop Chase</h5><b>Gol D. Roger</b><br><h1>S/.150</h1></td></tr>
-        <tr><td class="td-tabla-funko"><a href="Paginas/carrito.html"><button class="boton-tabla-funko">Comprar</button></td></tr>
-      </table>
-    </div>
+  <br><br>
 
-<!-- Producto 3 --> 
+  <!-- INICIO DE PUBLICACIONES -->
 
-    <div >
-      <table class="tabla-1-punko">
-        <tr><td class="td-tabla-funko"><img src="imgs/Chase03.png" width="208"></td></tr>
-        <tr><td class="td-tabla-funko"><img src = "imgs/Chase.png" width="50"><h5>Funko Pop Chase</h5><b>Aoi Todo</b><br><h1>S/.100</h1></td></tr>
-        <tr><td class="td-tabla-funko"><a href="Paginas/carrito.html"><button class="boton-tabla-funko">Comprar</button></td></tr>
-      </table>
-    </div>
-
-<!-- Producto 4 -->  
-
-    <div >
-      <table class="tabla-1-punko">
-        <tr><td class="td-tabla-funko"><img src="imgs/Chase04.png" width="200"></td></tr>
-        <tr><td class="td-tabla-funko"><img src = "imgs/Chase.png" width="50"><h5>Funko Pop Chase</h5><b>Armored Chopper</b><br><h1>S/.90</h1></td></tr>
-        <tr><td class="td-tabla-funko"><a href="Paginas/carrito.html"><button class="boton-tabla-funko">Comprar</button></td></tr>
-      </table>
-    </div>
-
-<!-- Producto 5 -->  
-
-    <div >
-      <table class="tabla-1-punko">
-        <tr><td class="td-tabla-funko"><img src="imgs/Chase05.png" width="215"></td></tr>
-        <tr><td class="td-tabla-funko"><img src = "imgs/Chase.png" width="50"><h5>Funko Pop Chase</h5><b>Yamato</b><br><h1>S/.150</h1></td></tr>
-        <tr><td class="td-tabla-funko"><a href="Paginas/carrito.html"><button class="boton-tabla-funko">Comprar</button></td></tr>
-      </table>
-    </div>
-
-<!-- Producto 6 -->    
-
-    <div >
-      <table class="tabla-1-punko">
-        <tr><td class="td-tabla-funko"><img src="imgs/Chase06.png" width="195"></td></tr>
-        <tr><td class="td-tabla-funko"><img src = "imgs/Chase.png" width="50"><h5>Funko Pop Chase</h5><b>Armored Luffy</b><br><h1>S/.300</h1></td></tr>
-        <tr><td class="td-tabla-funko"><a href="Paginas/carrito.html"><button class="boton-tabla-funko">Comprar</button></td></tr>
-      </table>
-    </div>
-     
-    </div>
-
-<!-- Fin de la tabla --> 
-
-<!-- Titulo Publicaciones -->  
-
-    <br><br>
-    <div align="center" id="publicaciones">
+  <br><br>
+  <div align="center" id="publicaciones">
     <h1> Publicaciones </h1>
     <h3> Mantente al tanto de las ultimas noticias del mundo del coleccionismo</h3>
+  </div>
+  <br>
+
+  <!-- Publicacion 1 -->
+
+  <div class="contenedor-publicaciones">
+
+    <div class="carta-publicacion">
+      <a href="Paginas/Publicacion01.html">
+        <h2>Toy Fair 2026</h2>
+        <img src="imgs/Post01.png">
+      </a>
     </div>
-    <br>
-    
 
-<!-- Inicio de la tabla -->  
+    <div class="carta-publicacion">
+      <a href="Paginas/Publicacion02.html">
+        <h2>Formatos Funko Pop!</h2>
+        <img src="imgs/Post02.png">
+      </a>
+    </div>
 
-<table border="0" cellspacing="20">
+    <div class="carta-publicacion">
+      <a href="Paginas/Publicacion03.html">
+        <h2>San Valentín</h2>
+        <img src="imgs/Post03.png">
+      </a>
+    </div>
 
- <!-- Publicacion 1 -->   
+  </div>
 
-    <td>
-       <table border="1" width="400" cellpadding="30">
-        <tr><td align="center"><a href="Paginas/Publicacion01.html"><h1>Toy Fair 2026</h1></a></td></tr>
-        <tr><td align="center"><a href="Paginas/Publicacion01.html"><img src = "imgs/Post01.png" width="500"></a></td></tr>
-
-      </table>
-    </td>
-
- <!-- Publicacion 2 --> 
-
-    <td>
-       <table border="1" width="400" cellpadding="30">
-        <tr><td align="center"><a href="Paginas/Publicacion02.html"><h1>Formatos Funko Pop!</h1></a></td></tr>
-        <tr><td align="center"><a href="Paginas/Publicacion02.html"><img src = "imgs/Post02.png" width="600"></a></td></tr>
-
-      </table>
-    </td>
-
- <!-- Publicacion 3 --> 
-
-   <td>
-       <table border="1" width="400" cellpadding="30">
-        <tr><td align="center"><a href="Paginas/Publicacion03.html"><h1>San Valentín</h1></a></td></tr>
-        <tr><td align="center"><a href="Paginas/Publicacion03.html"><img src = "imgs/Post03.png" width="487"></a></td></tr>
-
-      </table>
-    </td>
-   
-
-    </td>
-    </table>
-
-<!-- Fin de la tabla -->  
+  <!-- FIN DE LAS PUBLICACIONES -->
 
 
-<div align="center">
 
-    <table border="0" cellpadding="40">
-        <tr>
 
-            <!-- LOCALES -->
-            <td align="center">
+  
 
-                <h2>Locales</h2>
+  <footer class="footer">
 
-                <table border="5" width="300" cellpadding="10">
-                    <thead>
-                        <tr>
-                            <th>Ciudad</th>
-                            <th>Direccion</th>
-                        </tr>
-                    </thead>
+    <div class="footer-redes">
+      <h3>Redes sociales</h3>
 
-                    <tbody>
-                        
-                        <tr>
-                            <td>Lima</td>
-                            <td>Arenales 598</td>
-                        </tr>
+      <div class="redes">
+        <a href="https://www.facebook.com/profile.php?id=100076234667375" target="_blank" class="icono-red">
+          <img src="imgs/FB_logo.png" alt="Facebook">
+        </a>
 
-                        <tr>
-                            <td>Trujillo</td>
-                            <td>Jr. Gamarra 748</td>
-                        </tr>
-                        
-                        <tr>
-                            <td>Arequipa</td>
-                            <td>Av. Ejército 793</td>
-                        </tr>
+        <a href="https://www.tiktok.com/@collectoys_peru" target="_blank" class="icono-red">
+          <img src="imgs/Tiktok_logo.png" alt="TikTok">
+        </a>
 
-                    </tbody>
-                </table>
+        <a href="https://www.instagram.com/collectoys_peru/" target="_blank" class="icono-red">
+          <img src="imgs/Instagram_logo.png" alt="Instagram">
+        </a>
+      </div>
+    </div>
 
-            </td>
+    <div class="footer-links">
+      <h3>Atención al Cliente</h3>
 
-            <!-- HORARIOS -->
-            <td align="center">
-
-                <h2>Horarios</h2>
-
-                <table border="5" width="400" cellpadding="10">
-                    <thead>
-                        <tr>
-                            <th>Atencion</th>
-                            <th>Horario</th>
-                        </tr>
-                    </thead>
-
-                    <tbody align="center">
-                        <tr>
-                            <td>Lunes a Viernes</td>
-                            <td><i>9:00am - 7:00pm</i></td>
-                        </tr>
-
-                        <tr>
-                            <td>Sabado y Domingo</td>
-                            <td><i>10:00am - 4:00pm</i></td>
-                        </tr>
-                    </tbody>
-
-                    <tfoot align="center">
-                        <tr>
-                            <td>Delivery</td>
-                            <td><strong>Todos los dias</strong></td>
-                        </tr>
-                    </tfoot>
-                </table>
-
-            </td>
-
-        </tr>
-    </table>
-
-    <!-- Ubicación de Collectoys -->
-    <table align="center" border="0" cellspacing="10">
-      <tr>
-
-        <td align="center">
-          <h3>Collectoys - Lima</h3>
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.2139632375565!2d-77.037775!3d-12.070397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c7c7eae96d29%3A0x123456789abcdef!2sAvenida+Arenales+598%2C+Jes%C3%BAs+Mar%C3%ADa%2C+Lima%2C+Per%C3%BA!5e0!3m2!1ses!2spe!4v0000000000000"
-            width="500" 
-            height="400">
-          </iframe>
-        </td>
-
-        <td align="center">
-          <h3>Collectoys - Trujillo</h3>
-          <iframe 
-            src="https://www.google.com/maps?q=Jr.+Gamarra+748,+Trujillo,+Per%C3%BA&output=embed"
-            width="500" 
-            height="400">
-          </iframe>
-        </td>
-
-        <td align="center">
-          <h3>Collectoys - Arequipa</h3>
-          <iframe 
-          src="https://www.google.com/maps?q=Av.+Ej%C3%A9rcito+793,+Arequipa,+Per%C3%BA&output=embed"
-          width="500" 
-          height="400">
-          </iframe>
-        </td>
-      </tr>
-    </table>
-
-</div>
-
-<div align="center">
-
-    <footer>
-      
-    <h3>Redes sociales</h3>
-
-    <a href="https://www.facebook.com/profile.php?id=100076234667375" target="_blank"> <img src="imgs/FB_logo.png" width="50"></a>
-    <a href="https://www.tiktok.com/@collectoys_peru" target="_blank"><img src="imgs/Tiktok_logo.png" width="50"></a>
-    <a href="https://www.instagram.com/collectoys_peru/" target="_blank"><img src="imgs/Instagram_logo.png" width="50"></a>
-    
-    
-    <h3 id="atencion">Atencion al Cliente</h3>
-      
+      <div class="links">
         <a href="Paginas/PReembolso.html">Política de reembolso</a>
         <a href="Paginas/PEnvio.html">Política de envío</a>
         <a href="Paginas/TServicio.html">Términos del servicio</a>
         <a href="Paginas/reclamo.html">Libro de reclamaciones</a>
-     
-    </footer>
-</div>
+      </div>
+    </div>
+
+  </footer>
 
 </body>
+
 </html>
