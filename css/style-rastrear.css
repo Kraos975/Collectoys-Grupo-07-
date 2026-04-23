@@ -1,0 +1,84 @@
+/* Sección general */
+.rastreo {
+  padding: 40px 20px; /* espacio interno arriba/abajo y lados */
+  text-align: center; /* centra el contenido */
+}
+
+/* Título */
+.titulo {
+  font-size: 32px; /* tamaño grande */
+  margin-bottom: 30px; /* espacio debajo del título */
+}
+
+/* Contenedor */
+.tabla-container {
+  overflow-x: auto; /* permite scroll horizontal si la tabla es grande */
+}
+
+/* Tabla */
+.tabla-rastreo {
+  width: 90%; /* ancho de la tabla */
+  margin: auto; /* centra la tabla horizontalmente */
+  border-collapse: collapse; /* unir bordes */
+  background: #fff; /* fondo blanco */
+  border-radius: 10px; /* esquinas redondeadas */
+  overflow: hidden; /* evita que bordes sobresalgan */
+}
+
+/* Encabezado */
+.tabla-rastreo thead {
+  background: #111; /* fondo oscuro */
+  color: #fff; /* texto blanco */
+}
+
+/* Celdas del encabezado */
+.tabla-rastreo th {
+  padding: 15px; /* espacio dentro de la celda */
+  color: #fff; /* texto blanco */
+  text-align: center; /* centra el contenido */
+}
+
+/* Celdas normales */
+.tabla-rastreo td {
+  padding: 15px; /* espacio dentro de la celda */
+  border-bottom: 1px solid #ddd; /* línea divisoria */
+  color: #111; /* texto negro */
+  text-align: center; /* centra el contenido */
+}
+
+/* Hover de fila */
+.tabla-rastreo tbody tr:hover {
+  background: #f5f5f5; /* cambia el fondo al pasar el mouse */
+}
+
+/* Imagen del producto */
+.img-producto {
+  width: 120px; /* tamaño fijo */
+  display: block; /* block para centrar */
+  margin: 0 auto; /* centra horizontalmente */
+}
+
+/* Estados de envío/almacén */
+.estado {
+  font-weight: bold; /* texto en negrita */
+  border-radius: 20px; /* bordes redondeados */
+  padding: 8px 12px; /* espacio interno */
+  display: inline-block; /* permite padding y centrado */
+  margin: 0 auto; /* centra horizontalmente */
+}
+
+/* Colores de estado */
+.almacen {
+  background: #ffeaa7; /* amarillo claro */
+  color: #b7791f; /* texto marrón */
+}
+
+.envio {
+  background: #c7f9cc; /* verde claro */
+  color: #1b4332; /* texto verde oscuro */
+}
+
+/* Marquee (desplazamiento) */
+marquee {
+  margin-top: 40px; /* espacio arriba */
+}

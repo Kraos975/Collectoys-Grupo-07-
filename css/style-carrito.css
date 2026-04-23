@@ -1,0 +1,80 @@
+.carrito-container {
+    display: flex; /* flexbox para alinear elementos */
+    justify-content: center; /* centra horizontalmente */
+    gap: 40px; /* espacio entre contenedores */
+    padding: 100px; /* espacio interno */
+    flex-wrap: wrap; /* baja a nueva fila si no cabe */
+}
+
+/* ITEMS */
+.carrito-items {
+    background: #1c1c1c; /* fondo oscuro */
+    padding: 20px; /* relleno interno */
+    border-radius: 20px; /* bordes redondeados */
+    width: 600px; /* ancho fijo */
+}
+
+.item {
+    display: flex; /* flexbox para alinear contenido */
+    align-items: center; /* centra vertical */
+    justify-content: space-between; /* espacio entre elementos */
+    background: #2a2a2a; /* fondo gris oscuro */
+    padding: 15px; /* relleno */
+    border-radius: 15px; /* bordes redondeados */
+    margin-bottom: 15px; /* espacio entre items */
+}
+
+.item img {
+    width: 80px; /* ancho imagen */
+    border-radius: 10px; /* bordes redondeados */
+}
+
+.info {
+    flex: 1; /* ocupa espacio restante */
+    margin-left: 15px; /* separación izquierda */
+}
+
+.precio {
+    font-weight: bold; /* texto en negrita */
+    color: #ff3c3c; /* color rojo */
+}
+
+/* RESUMEN */
+.carrito-resumen {
+    background: #1c1c1c; /* fondo oscuro */
+    padding: 20px; /* relleno */
+    border-radius: 20px; /* bordes redondeados */
+    width: 300px; /* ancho fijo */
+    height: fit-content; /* altura según contenido */
+}
+
+.resumen-linea {
+    display: flex; /* flexbox */
+    justify-content: space-between; /* espacio entre elementos */
+    margin: 10px 0; /* margen vertical */
+}
+
+.total {
+    font-size: 18px; /* tamaño fuente */
+    font-weight: bold; /* negrita */
+    border-top: 1px solid gray; /* línea superior */
+    padding-top: 10px; /* relleno superior */
+}
+
+/* BOTÓN */
+.btn-comprar-carrito {
+    width: 100%; /* ancho completo */
+    padding: 15px; /* relleno */
+    margin-top: 20px; /* espacio arriba */
+    background: red; /* fondo rojo */
+    border: none; /* sin borde */
+    border-radius: 30px; /* bordes redondeados */
+    color: white; /* texto blanco */
+    font-weight: bold; /* negrita */
+    cursor: pointer; /* cursor pointer */
+}
+
+.btn-comprar-carrito:hover {
+    background: white; /* fondo blanco al pasar */
+    color: red; /* texto rojo */
+}

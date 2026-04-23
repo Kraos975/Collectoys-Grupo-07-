@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,85 +10,100 @@
 </head>
 
 <!-- INICIO BARRA DE NAVEGACION -->
-    <header>
-        
-        <a href="../index.html"><img src="../imgs/barralogo.png" alt="" id="logo"></a>
-        <nav>
-            <ul class="navlinks">
-                
-                <li><a href="../Paginas/Registro.html">Registro</a></li>
-                <li><a href="../Paginas/Login.html">Login</a></li>
-                <li><a href="../Paginas/carrito.html">Carrito</a></li>
-                <li><a href="../Documentos/Catalogo Collectoys.pdf" target="_blank">Catalogo</a></li>
-                <li><a href="../Paginas/Staff.html">Staff</a></li>
-                <li><a href="../Paginas/Musica.html">Temas</a></li>
-                <li><a href="../Paginas/rastrear.html">Rastrear pedido</a></li>
+<header>
 
-            </ul>
-        </nav>
-            <div class="navright">
-                <a href="../Paginas/carrito.html" class="icononav"><img src="../imgs/Carrito.png" alt="" width=" 40px"></a>
-                <a href="../Paginas/Login.html paginas/login.html" class="icononav"><img src="../imgs/logousuario.png" alt="" width="40px"></a>
-            </div>
-    </header>
+    <a href="../index.html"><img src="../imgs/barralogo.png" alt="" id="logo"></a>
+    <nav>
+        <ul class="navlinks">
+
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../index.html#seccion-categorias">Categorias</a></li>
+            <li><a href="../Paginas/Staff.html">Staff</a></li>
+            <li><a href="../Paginas/Musica.html">Temas</a></li>
+            <li><a href="../Paginas/rastrear.html">Rastrear pedido</a></li>
+
+        </ul>
+    </nav>
+    <div class="navright">
+        <a href="../Paginas/carrito.html" class="icononav"><img src="../imgs/Carrito.png" alt="" width=" 40px"></a>
+        <a href="../Paginas/Login.html" class="icononav"><img src="../imgs/logousuario.png" alt="" width="40px"></a>
+    </div>
+</header>
 <!-- FIN DE BARRA DE NAVEGACION -->
 
 
-    <div align="center">
 
-    <h2>Registrate para comprar y recibir ofertas exclusivas</h2>
     
-     <form>
+      <section class="section-formularios">
+        <div class="contenedor-formularios">
+    
+            <form class="formularios">
 
-        <label>Nombre</label><br><br>
-        <input type="text" placeholder="Ingrese un nombre"required><br><br>
-        
-        <label>Apellidos</label><br><br>
-        <input type="text" placeholder="Ingresa Apellidos"required><br><br>
-        
-        <label>Ciudad</label><br>
-        <select required><br>
-            <option >Seleccione una ciudad</option>
-            <option>Lima</option>
-            <option>Arequipa</option>
-            <option>Trujillo</option>
-        </select> <br><br>
-        
-        <label>Correo electronico</label><br><br>
-        <input type="email" placeholder="Ingresa un correo electronico" required><br><br>
-        
-        <label>Contraseña</label><br><br>
-        <input type="password" placeholder="Ingrese contraseña"required><br><br>
-        
-        <label> Acepta los terminos y condiciones</label>
-        <input type="checkbox" required><br>
-        
-        <label>Desea que se le envie a su correo sobre nuestras promociones y más (opcional)</label>
-        <input type="checkbox"><br><br>
-       
-        <input type="submit" value="Registrarse">
+            <label>Nombre</label>
+            <input type="text" placeholder="Ingrese un nombre" required>
 
-     </form>
-     </div>
+            <label>Apellidos</label>
+            <input type="text" placeholder="Ingresa Apellidos" required>
 
-<div align="center">
+            <label>Ciudad</label>
+            <select required>
+                <option>Seleccione una ciudad</option>
+                <option>Lima</option>
+                <option>Arequipa</option>
+                <option>Trujillo</option>
+            </select> 
 
-    <footer>
-      
+            <label>Correo electronico</label>
+            <input type="email" placeholder="Ingresa un correo electronico" required>
+
+            <label>Contraseña</label>
+            <input type="password" placeholder="Ingrese contraseña" required>
+
+            <label> Acepta los terminos y condiciones <input type="checkbox" required></label>
+            
+
+            <label>Desea que se le envie a su correo sobre nuestras promociones y más (opcional) <input type="checkbox"></label>
+            
+
+            <input type="submit" value="Registrarse">
+
+            </form>
+        </div>
+    </section>  
+
+<!-- iNICIO FOOTER -->
+  <footer class="footer">
+
+  <div class="footer-redes">
     <h3>Redes sociales</h3>
 
-    <a href="https://www.facebook.com/profile.php?id=100076234667375" target="_blank"> <img src="../imgs/FB_logo.png" width="50"></a>
-    <a href="https://www.tiktok.com/@collectoys_peru" target="_blank"><img src="../imgs/Tiktok_logo.png" width="50"></a>
-    <a href="https://www.instagram.com/collectoys_peru/" target="_blank"><img src="../imgs/Instagram_logo.png" width="50"></a>
+    <div class="redes">
+      <a href="https://www.facebook.com/profile.php?id=100076234667375" target="_blank" class="icono-red">
+        <img src="../imgs/FB_logo.png" alt="Facebook">
+      </a>
 
-    <h3 id="atencion">Atencion al Cliente</h3>
+      <a href="https://www.tiktok.com/@collectoys_peru" target="_blank" class="icono-red">
+        <img src="../imgs/Tiktok_logo.png" alt="TikTok">
+      </a>
 
-        <a href="../Paginas/PReembolso.html">Política de reembolso</a>
-        <a href="../Paginas/PEnvio.html">Política de envío</a>
-        <a href="../Paginas/TServicio.html">Términos del servicio</a>
-        <a href="../Paginas/reclamo.html">Libro de reclamaciones</a>
-     
-    </footer>
-</div>
+      <a href="https://www.instagram.com/collectoys_peru/" target="_blank" class="icono-red">
+        <img src="../imgs/Instagram_logo.png" alt="Instagram">
+      </a>
+    </div>
+  </div>
+
+  <div class="footer-links">
+    <h3>Atención al Cliente</h3>
+
+    <div class="links">
+      <a href="../Paginas/PReembolso.html">Política de reembolso</a>
+      <a href="../Paginas/PEnvio.html">Política de envío</a>
+      <a href="../Paginas/TServicio.html">Términos del servicio</a>
+      <a href="../Paginas/reclamo.html">Libro de reclamaciones</a>
+    </div>
+  </div>
+
+</footer>
 </body>
+
 </html>
